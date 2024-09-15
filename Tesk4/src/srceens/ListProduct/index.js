@@ -9,8 +9,6 @@ const data = [
   { id: '2', name: 'Samsung 2', brand: 'Samsung', price: '$799', oldprice: '$899', productImage: 'https://cdn.nguyenkimmall.com/images/detailed/836/10053766-dien-thoai-samsung-galaxy-a23-5g-4gb-128gb-xanh-1.jpg' },
   { id: '3', name: 'Iphone 3', brand: 'Apple', price: '$1099', oldprice: '$1299', productImage: 'https://th.bing.com/th/id/OIP.99qJd0KiYicICEzUQ8l13wAAAA?rs=1&pid=ImgDetMain' },
   { id: '4', name: 'Iphone 4', brand: 'Apple', price: '$1199', oldprice: '$1399', productImage: 'https://cdn.nguyenkimmall.com/images/detailed/670/10044325-dien-thoai-iphone-11-128gb-xanh-la-1.jpg' },
- 
-
   { id: '5', name: 'Iphone 4', brand: 'Apple', price: '$1199', oldprice: '$1399', productImage: 'https://cdn.nguyenkimmall.com/images/detailed/670/10044325-dien-thoai-iphone-11-128gb-xanh-la-1.jpg' },
   
 ];

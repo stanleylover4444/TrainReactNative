@@ -16,18 +16,39 @@ const Tab = createBottomTabNavigator();
 const HomeStack = createNativeStackNavigator();
 const Drawer = createDrawerNavigator();
 
-
+const HomeStackScreen  = () => {
+  return(
+    <HomeStack.Navigator>
+       <HomeStack.Screen 
+        name="Home" 
+        component={Home} 
+        options={{ 
+          headerShown: false 
+        }} 
+      />
+      <HomeStack.Screen 
+        name="Details" 
+        component={Details} 
+        options={{ 
+          headerShown: false 
+        }} 
+      />
+    </HomeStack.Navigator>
+  )
+}
 
 const MyTabs = () => {
   return (
     <Tab.Navigator>
       <Tab.Screen
-        name="Home"
-        component={Home}
+        name="HonmeStack"
+        component={HomeStackScreen}
         options={{
-          tabBarBadge: 1, 
+          tabBarBadge: 1, headerShown :false
         }}
-      />
+      /> 
+
+
       <Tab.Screen
         name="Setting"
         component={Setting}
@@ -43,9 +64,9 @@ const MyTabs = () => {
 
 const MyDrawer = () => {
   return (
-    <Drawer.Navigator initialRouteName="Hofme" screenOptions={{drawerPosition: ''}}   >
-      <Drawer.Screen name="Homse" component={MyTabs} options={{  headerShown : false,
-         
+    <Drawer.Navigator initialRouteName="Home"   >
+
+      <Drawer.Screen name="HomeDrawer" component={MyTabs} options={{  
           headerStyle: {
             backgroundColor: 'gray',
           },
@@ -53,8 +74,9 @@ const MyDrawer = () => {
           headerTitleStyle: {
             fontWeight: 'bold', 
           },
+          headerShown : false
         }}/>
-      <Drawer.Screen name="Notifications" component={Notifications}  />
+      <Drawer.Screen name="Notifications" component={Notifications}    />
       <Drawer.Screen name="Profile" component={Profile} />
     </Drawer.Navigator>
   );

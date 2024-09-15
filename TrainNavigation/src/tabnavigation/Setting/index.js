@@ -1,11 +1,27 @@
-import React from "react";
-import { Text, View } from "react-native";
-import styles from "./style";
+// App.js
+import React from 'react';
+import { SafeAreaView, StyleSheet, Text } from 'react-native';
 
-const Setting = () => {
-    return(
-        <View style={styles.container}></View>
-    );
+import { ThemeProvider } from '../../component/theme/ThemeContext';
+import ThemedComponent from '../../component/theme/ThemedComponent';
+
+const App = () => {
+  return (
+    <ThemeProvider>
+      <SafeAreaView style={styles.container}>
+        <ThemedComponent>
+        
+          </ThemedComponent> 
+        
+      </SafeAreaView>
+    </ThemeProvider>
+  );
 };
 
-export default Setting;
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+  },
+});
+
+export default App;
