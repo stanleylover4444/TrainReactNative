@@ -63,9 +63,6 @@ function LoginSrceens() {
     </View>
   
 
-
-
-
   );
 }
 
